@@ -4,18 +4,21 @@
 
 :root {
     /* Colors */
-    --primary: #2c3e50;
-    --primary-light: #34495e;
-    --primary-dark: #1a252f;
-    --accent: #e67e22;
-    --accent-light: #f39c12;
-    --accent-dark: #d35400;
+    --primary: #1e3a5f;
+    --primary-light: #2c5282;
+    --primary-dark: #0f1e33;
+    --accent: #ff6b35;
+    --accent-light: #ff8c61;
+    --accent-dark: #e55a2b;
+    --secondary: #4a90e2;
+    --secondary-light: #6ba3e8;
+    --tertiary: #9b59b6;
     --success: #27ae60;
     --bg-light: #ffffff;
     --bg-gray: #f8f9fa;
     --bg-dark: #1a1a1a;
     --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
+    --text-light: #6c757d;
     --text-white: #ffffff;
 
     /* Spacing */
@@ -78,14 +81,37 @@ button {
 }
 
 .section-gray {
-    background:
-        linear-gradient(to bottom, rgba(248, 249, 250, 0.95), rgba(248, 249, 250, 0.95)),
-        url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80') center/cover no-repeat fixed;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-gray::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.section-gray::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .section-dark {
-    background:
-        linear-gradient(135deg, rgba(26, 26, 26, 0.92) 0%, rgba(44, 62, 80, 0.92) 100%),
+    background: linear-gradient(135deg, rgba(30, 58, 95, 0.95) 0%, rgba(15, 30, 51, 0.95) 100%),
         url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80') center/cover no-repeat fixed;
     color: var(--text-white);
     position: relative;
@@ -98,7 +124,8 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(230, 126, 34, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle at 30% 50%, rgba(255, 107, 53, 0.2) 0%, transparent 60%),
+                radial-gradient(circle at 70% 80%, rgba(74, 144, 226, 0.15) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -107,14 +134,14 @@ button {
    ==================================== */
 
 #header {
-    background: linear-gradient(135deg, rgba(26, 37, 47, 0.95) 0%, rgba(44, 62, 80, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(30, 58, 95, 0.98) 0%, rgba(74, 144, 226, 0.95) 100%);
     backdrop-filter: blur(20px);
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(74, 144, 226, 0.3);
+    border-bottom: 2px solid rgba(255, 107, 53, 0.3);
 }
 
 .header-content {
@@ -134,7 +161,7 @@ button {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #ffffff 0%, #e67e22 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ff6b35 50%, #ffd700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -298,7 +325,7 @@ button {
     width: 100%;
     height: 100%;
     background:
-        linear-gradient(135deg, rgba(26, 26, 26, 0.85) 0%, rgba(44, 62, 80, 0.85) 50%, rgba(52, 73, 94, 0.85) 100%),
+        linear-gradient(135deg, rgba(15, 30, 51, 0.9) 0%, rgba(30, 58, 95, 0.85) 50%, rgba(74, 144, 226, 0.75) 100%),
         url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80') center/cover no-repeat;
     z-index: -2;
 }
@@ -311,8 +338,8 @@ button {
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle at 20% 50%, rgba(230, 126, 34, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(52, 152, 219, 0.15) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(155, 89, 182, 0.2) 0%, transparent 50%);
     backdrop-filter: blur(2px);
     z-index: -1;
 }
@@ -330,10 +357,11 @@ button {
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
-    background: linear-gradient(135deg, #ffffff 0%, #e67e22 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ff6b35 50%, #ffd700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 0 40px rgba(255, 107, 53, 0.3);
 }
 
 .hero-subtitle {
@@ -528,18 +556,56 @@ button {
 .stat-card {
     text-align: center;
     padding: 40px 30px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    padding: 3px;
+    background: linear-gradient(135deg, var(--secondary), var(--accent), var(--tertiary));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.stat-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .stat-card:hover {
-    transform: translateY(-15px) scale(1.03);
-    box-shadow: 0 16px 48px rgba(230, 126, 34, 0.25);
-    border-color: rgba(230, 126, 34, 0.3);
+    transform: translateY(-15px) scale(1.05) rotate(-2deg);
+    box-shadow: 0 20px 60px rgba(74, 144, 226, 0.3);
+}
+
+.stat-card:hover::before {
+    opacity: 1;
+}
+
+.stat-card:hover::after {
+    opacity: 1;
 }
 
 .stat-number {
@@ -576,14 +642,14 @@ button {
 }
 
 .client-card {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
     backdrop-filter: blur(10px);
     padding: 40px 30px;
-    border-radius: 20px;
+    border-radius: 30px 30px 30px 5px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid transparent;
     position: relative;
     overflow: hidden;
 }
@@ -593,21 +659,39 @@ button {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.client-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+    height: 5px;
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 50%, var(--tertiary) 100%);
     transform: scaleX(0);
+    transform-origin: left;
     transition: transform 0.4s ease;
 }
 
 .client-card:hover::before {
+    opacity: 1;
+}
+
+.client-card:hover::after {
     transform: scaleX(1);
 }
 
 .client-card:hover {
     transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(230, 126, 34, 0.2);
-    border-color: rgba(230, 126, 34, 0.3);
+    box-shadow: 0 20px 50px rgba(74, 144, 226, 0.25);
+    border-color: rgba(74, 144, 226, 0.3);
+    border-radius: 30px 5px 30px 30px;
 }
 
 .client-icon {
@@ -638,15 +722,15 @@ button {
 }
 
 .advantage-card {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
     backdrop-filter: blur(10px);
     padding: 40px 30px;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-left: 5px solid var(--accent);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-left: 5px solid var(--accent);
+    border-left: 6px solid var(--secondary);
+    border: 2px solid #e8ecef;
+    border-left: 6px solid var(--secondary);
     position: relative;
     overflow: hidden;
 }
@@ -655,23 +739,35 @@ button {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(135deg, transparent 0%, rgba(230, 126, 34, 0.05) 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(74, 144, 226, 0.08) 50%, rgba(255, 107, 53, 0.08) 100%);
+    transition: right 0.5s ease;
+    z-index: 0;
 }
 
 .advantage-card:hover::after {
-    opacity: 1;
+    right: 0;
+}
+
+.advantage-card:nth-child(odd) {
+    border-left-color: var(--accent);
+}
+
+.advantage-card:nth-child(3n) {
+    border-left-color: var(--tertiary);
 }
 
 .advantage-card:hover {
-    transform: translateY(-10px) translateX(5px);
-    box-shadow: 0 16px 40px rgba(230, 126, 34, 0.2);
-    border-left-color: var(--accent-dark);
-    border-left-width: 8px;
+    transform: translateY(-10px) translateX(8px);
+    box-shadow: 0 16px 40px rgba(74, 144, 226, 0.25);
+    border-left-width: 10px;
+}
+
+.advantage-card > * {
+    position: relative;
+    z-index: 1;
 }
 
 .advantage-icon {
@@ -726,7 +822,7 @@ button {
 .step-number {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
     color: white;
     border-radius: 50%;
     display: flex;
@@ -736,9 +832,19 @@ button {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     flex-shrink: 0;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 24px rgba(74, 144, 226, 0.4);
     position: relative;
     z-index: 2;
+}
+
+.process-step:nth-child(2n) .step-number {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
+}
+
+.process-step:nth-child(3n) .step-number {
+    background: linear-gradient(135deg, var(--tertiary), #b97dcc);
+    box-shadow: 0 8px 24px rgba(155, 89, 182, 0.4);
 }
 
 .step-content {
@@ -905,7 +1011,7 @@ button {
 
 .section-cta {
     background:
-        linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(26, 37, 47, 0.95) 100%),
+        linear-gradient(135deg, rgba(30, 58, 95, 0.95) 0%, rgba(74, 144, 226, 0.9) 100%),
         url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1920&q=80') center/cover no-repeat fixed;
     color: white;
     position: relative;
@@ -918,7 +1024,8 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 70% 50%, rgba(230, 126, 34, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle at 70% 50%, rgba(255, 107, 53, 0.2) 0%, transparent 60%),
+                radial-gradient(circle at 30% 80%, rgba(155, 89, 182, 0.15) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -1021,7 +1128,7 @@ button {
 
 .footer {
     background:
-        linear-gradient(135deg, rgba(26, 37, 47, 0.98) 0%, rgba(26, 26, 26, 0.98) 100%),
+        linear-gradient(135deg, rgba(15, 30, 51, 0.98) 0%, rgba(30, 58, 95, 0.98) 100%),
         url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=80') center/cover no-repeat;
     color: white;
     padding: 60px 0 30px;
@@ -1035,7 +1142,8 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 0%, rgba(230, 126, 34, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 50% 0%, rgba(74, 144, 226, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 100%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -1099,6 +1207,46 @@ button {
    Floating Elements
    ==================================== */
 
+.floating-whatsapp {
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #25D366 0%, #20ba5a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+    z-index: 1000;
+    transition: var(--transition);
+    animation: pulse-whatsapp 2.5s infinite;
+}
+
+.floating-whatsapp svg {
+    width: 36px;
+    height: 36px;
+    color: white;
+}
+
+.floating-whatsapp:hover {
+    background: linear-gradient(135deg, #20ba5a 0%, #1ea952 100%);
+    transform: scale(1.15) rotate(-5deg);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.7);
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% {
+        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 12px 36px rgba(37, 211, 102, 0.8);
+        transform: scale(1.05);
+    }
+}
+
 .floating-telegram {
     position: fixed;
     bottom: 30px;
@@ -1113,7 +1261,7 @@ button {
     box-shadow: 0 8px 24px rgba(0, 136, 204, 0.5);
     z-index: 1000;
     transition: var(--transition);
-    animation: pulse-telegram 2.5s infinite;
+    animation: pulse-telegram 2.5s infinite 0.3s;
 }
 
 .floating-telegram svg {
@@ -1278,6 +1426,18 @@ button {
         grid-template-columns: 1fr;
     }
 
+    .floating-whatsapp {
+        width: 55px;
+        height: 55px;
+        bottom: 90px;
+        right: 20px;
+    }
+
+    .floating-whatsapp svg {
+        width: 30px;
+        height: 30px;
+    }
+
     .floating-telegram {
         width: 55px;
         height: 55px;
@@ -1293,7 +1453,7 @@ button {
     .scroll-to-top {
         width: 45px;
         height: 45px;
-        bottom: 80px;
+        bottom: 160px;
         left: 20px;
     }
 }
