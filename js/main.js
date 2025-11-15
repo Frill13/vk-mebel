@@ -33,13 +33,46 @@ if (mobileMenuBtn) {
 }
 
 // ====================================
-// Sticky Header
+// Performance Utilities (moved up)
+// ====================================
+
+// Debounce function for scroll events
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Throttle function for continuous scroll effects
+function throttle(func, limit) {
+    let inThrottle;
+    return function(...args) {
+        if (!inThrottle) {
+            func.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
+
+// Check if device is mobile
+const isMobile = window.innerWidth <= 768;
+
+// ====================================
+// Sticky Header (Optimized)
 // ====================================
 
 const header = document.getElementById('header');
 let lastScroll = 0;
+let ticking = false;
 
-window.addEventListener('scroll', () => {
+function updateHeader() {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
@@ -49,6 +82,14 @@ window.addEventListener('scroll', () => {
     }
 
     lastScroll = currentScroll;
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(updateHeader);
+        ticking = true;
+    }
 });
 
 // ====================================
@@ -196,16 +237,25 @@ setTimeout(() => {
 }, 100);
 
 // ====================================
-// Scroll to Top Button
+// Scroll to Top Button (Optimized)
 // ====================================
 
 const scrollToTopBtn = document.getElementById('scrollToTop');
+let scrollTopTicking = false;
 
-window.addEventListener('scroll', () => {
+function updateScrollTopBtn() {
     if (window.pageYOffset > 500) {
         scrollToTopBtn.classList.add('visible');
     } else {
         scrollToTopBtn.classList.remove('visible');
+    }
+    scrollTopTicking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!scrollTopTicking) {
+        window.requestAnimationFrame(updateScrollTopBtn);
+        scrollTopTicking = true;
     }
 });
 
@@ -217,19 +267,29 @@ scrollToTopBtn.addEventListener('click', () => {
 });
 
 // ====================================
-// Parallax Effect for Hero Section
+// Parallax Effect for Hero Section (Optimized)
 // ====================================
 
 const heroBg = document.querySelector('.hero-bg');
+let parallaxTicking = false;
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset < window.innerHeight) {
-        const scrolled = window.pageYOffset;
-        if (heroBg) {
+// Disable parallax on mobile devices for performance
+if (!isMobile && heroBg) {
+    function updateParallax() {
+        if (window.pageYOffset < window.innerHeight) {
+            const scrolled = window.pageYOffset;
             heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
         }
+        parallaxTicking = false;
     }
-});
+
+    window.addEventListener('scroll', () => {
+        if (!parallaxTicking) {
+            window.requestAnimationFrame(updateParallax);
+            parallaxTicking = true;
+        }
+    });
+}
 
 // ====================================
 // Lazy Loading Images Optimization
@@ -261,6 +321,7 @@ if ('IntersectionObserver' in window) {
 
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-desktop a, .mobile-menu nav a');
+let navTicking = false;
 
 function setActiveNav() {
     const scrollY = window.pageYOffset;
@@ -279,9 +340,12 @@ function setActiveNav() {
             });
         }
     });
+    navTicking = false;
 }
 
-window.addEventListener('scroll', setActiveNav);
+// Use debounced version for better performance
+const debouncedSetActiveNav = debounce(setActiveNav, 100);
+window.addEventListener('scroll', debouncedSetActiveNav);
 
 // ====================================
 // Prevent Empty Hash Links
@@ -303,26 +367,10 @@ console.log('%c28 лет опыта | Собственное производс�
 console.log('%cТелефон: +7 921 726 0679', 'font-size: 12px; color: #27ae60;');
 
 // ====================================
-// Performance Optimization
+// Apply Performance Optimizations
 // ====================================
 
-// Debounce function for scroll events
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Apply debounce to scroll-heavy functions
-const debouncedSetActiveNav = debounce(setActiveNav, 100);
-window.removeEventListener('scroll', setActiveNav);
-window.addEventListener('scroll', debouncedSetActiveNav);
+// Apply debounce to active nav function (already handled above, no duplicate listener needed)
 
 // ====================================
 // Dynamic Year in Footer

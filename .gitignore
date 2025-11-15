@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build tools
+optimize-images.js
+
+# Backup images
+some images/original-backup/
+
+# Editor directories
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
