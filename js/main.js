@@ -300,7 +300,7 @@ document.querySelectorAll('a[href="#"]').forEach(link => {
 console.log('%cВК-Мебель', 'font-size: 24px; font-weight: bold; color: #e67e22;');
 console.log('%cПроизводство корпусной мебели в Петрозаводске', 'font-size: 14px; color: #2c3e50;');
 console.log('%c28 лет опыта | Собственное производство', 'font-size: 12px; color: #7f8c8d;');
-console.log('%cТелефон: (8142) 26-06-79', 'font-size: 12px; color: #27ae60;');
+console.log('%cТелефон: +7 921 726 0679', 'font-size: 12px; color: #27ae60;');
 
 // ====================================
 // Performance Optimization
