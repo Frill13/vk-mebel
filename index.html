@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>ВК-Мебель | Производство корпусной мебели в Петрозаводске</title>
+    <meta name="description" content="Производство корпусной мебели на заказ в Петрозаводске. 28 лет опыта. Нестандартные решения. Работа с бизнесом и частными клиентами. Бесплатный замер.">
+    <meta name="keywords" content="мебель на заказ, корпусная мебель, мебель Петрозаводск, кухни на заказ, офисная мебель">
+
+    <!-- Open Graph / Facebook / VK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frill13.github.io/vk-mebel/">
+    <meta property="og:title" content="ВК-Мебель | Производство мебели на заказ в Петрозаводске">
+    <meta property="og:description" content="28 лет опыта изготовления корпусной мебели. Нестандартные решения под ваш бюджет. Бесплатный замер и 3D-визуализация.">
+    <meta property="og:image" content="https://frill13.github.io/vk-mebel/some images/1.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪑</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🪑</span>
+                    <span class="logo-text">ВК-Мебель</span>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="#about">О нас</a>
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#process">Как работаем</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+
+                <div class="header-contacts">
+                    <a href="tel:+78142260679" class="phone">(8142) 26-06-79</a>
+                    <div class="messengers">
+                        <a href="https://wa.me/78142260679" class="btn-messenger whatsapp" target="_blank">WhatsApp</a>
+                        <a href="https://t.me/+78142260679" class="btn-messenger telegram" target="_blank">Telegram</a>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#advantages">Преимущества</a>
+            <a href="#process">Как работаем</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="mobile-menu-contacts">
+            <a href="tel:+78142260679" class="phone">(8142) 26-06-79</a>
+            <a href="https://wa.me/78142260679" class="btn-messenger whatsapp">WhatsApp</a>
+            <a href="https://t.me/+78142260679" class="btn-messenger telegram">Telegram</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Корпусная мебель<br>любой сложности</h1>
+                <p class="hero-subtitle">Нестандартные решения под ваш бюджет. От проекта до установки.</p>
+
+                <div class="hero-features">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <span class="feature-number">28 лет</span>
+                        <span class="feature-text">опыта</span>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <span class="feature-number">Собственное</span>
+                        <span class="feature-text">производство</span>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <span class="feature-number">Весь</span>
+                        <span class="feature-text">Северо-Запад</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                    <button class="btn btn-primary" onclick="scrollToContacts()">Бесплатный замер</button>
+                    <a href="https://wa.me/78142260679" class="btn btn-secondary" target="_blank">Написать в WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Создаём мебель с 1997 года</h2>
+                <p class="section-description">
+                    Мы — команда профессионалов с собственным производством в центре Петрозаводска.
+                    Наш самый молодой сотрудник работает в компании уже 11 лет. За 28 лет работы
+                    мы накопили огромный опыт решения нестандартных задач и реализовали проекты
+                    от барных стоек сложной конфигурации до полного оснащения медицинских клиник.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="28">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">лет на рынке</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">выполненных проектов</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="9">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">профессионалов в команде</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="6">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">регионов работы</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="section section-gray">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Для кого мы работаем</h2>
+                <p class="section-description">Работаем с бизнесом и частными заказчиками</p>
+            </div>
+
+            <div class="clients-grid">
+                <div class="client-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="client-icon">🍽️</div>
+                    <h3>Рестораны и кафе</h3>
+                    <p>Барные стойки, мебель для залов, кухонное оборудование. Реализуем проекты любой сложности — от простых столов до барных стоек нестандартной конфигурации.</p>
+                </div>
+
+                <div class="client-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="client-icon">🏥</div>
+                    <h3>Медицинские учреждения</h3>
+                    <p>Специализированная мебель для клиник, регистратур и кабинетов. Соблюдаем все требования к медицинскому оборудованию.</p>
+                </div>
+
+                <div class="client-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="client-icon">🏢</div>
+                    <h3>Офисы и торговые объекты</h3>
+                    <p>Торговое оборудование, офисная мебель, приёмные, аптеки. Работаем с организациями любого масштаба.</p>
+                </div>
+
+                <div class="client-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="client-icon">🏠</div>
+                    <h3>Частные клиенты</h3>
+                    <p>Кухни на заказ, гардеробные, встроенная мебель для дома. Индивидуальный подход к каждому проекту.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Почему выбирают нас</h2>
+            </div>
+
+            <div class="advantages-grid">
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="advantage-icon">⚡</div>
+                    <h3>Нестандартные решения</h3>
+                    <p>Воплощаем любые идеи. Работаем с нестандартными размерами и сложными конфигурациями. Если у вас есть задача — мы найдём решение.</p>
+                </div>
+
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="advantage-icon">💰</div>
+                    <h3>Работа под любой бюджет</h3>
+                    <p>Подберём оптимальные материалы под ваши задачи и бюджет. Честные цены без переплат и скрытых расходов.</p>
+                </div>
+
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="advantage-icon">🏆</div>
+                    <h3>28 лет опыта</h3>
+                    <p>За годы работы мы решили тысячи задач. Стабильная команда профессионалов знает все тонкости производства.</p>
+                </div>
+
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="advantage-icon">🚚</div>
+                    <h3>Доставка и установка</h3>
+                    <p>Профессиональный монтаж включён в 80% заказов. Устанавливаем качественно, убираем за собой.</p>
+                </div>
+
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="advantage-icon">🎨</div>
+                    <h3>Работаем с дизайнерами</h3>
+                    <p>Реализуем сложные авторские проекты. Помогаем с планировкой и подбором материалов.</p>
+                </div>
+
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="advantage-icon">✨</div>
+                    <h3>Качественные материалы</h3>
+                    <p>ЛДСП, МДФ, стекло, искусственный камень, HPL компакт. Используем современные и классические материалы.</p>
+                </div>
+
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="advantage-icon">⏱️</div>
+                    <h3>Чёткие сроки</h3>
+                    <p>От 14 до 45 дней с момента утверждения проекта. Соблюдаем договорённости и информируем о ходе работ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section section-gray">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Как мы работаем</h2>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Заявка</h3>
+                        <p>Позвоните, напишите в WhatsApp или Telegram. Обсудим вашу задачу и договоримся о встрече.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Бесплатный замер</h3>
+                        <p>Наш специалист приедет в удобное для вас время. Выполним замеры, проконсультируем по материалам и возможным решениям.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Проект и расчёт</h3>
+                        <p>Подготовим проект, поможем с выбором материалов и рассчитаем точную стоимость.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Производство</h3>
+                        <p>Изготовим мебель на собственном производстве. Контролируем качество на каждом этапе. Срок — от 14 до 45 дней.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-right" data-aos-delay="500">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Доставка и установка</h3>
+                        <p>Доставим и профессионально установим мебель. Уберём после себя.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Наши проекты</h2>
+                <p class="section-description">Более 1000 реализованных заказов в 6 регионах</p>
+            </div>
+
+            <!-- Portfolio Slider -->
+            <div class="swiper portfolioSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Images will be inserted via JavaScript -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="300">
+                <!-- Images will be inserted via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Geography Section -->
+    <section id="geography" class="section section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Работаем по всему Северо-Западу</h2>
+                <p class="section-description">Выполняем заказы не только в Петрозаводске, но и по всей Карелии, а также в соседних регионах</p>
+            </div>
+
+            <div class="geography-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="geography-item">📍 Петрозаводск</div>
+                <div class="geography-item">📍 Республика Карелия</div>
+                <div class="geography-item">📍 Мурманская область</div>
+                <div class="geography-item">📍 Ленинградская область</div>
+                <div class="geography-item">📍 Санкт-Петербург</div>
+                <div class="geography-item">📍 Москва</div>
+            </div>
+
+            <p class="geography-note" data-aos="fade-up" data-aos-delay="300">
+                Организуем доставку и установку в любой точке Северо-Запада России
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="section section-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Готовы обсудить ваш проект?</h2>
+                <p class="cta-text">Свяжитесь с нами удобным способом. Ответим на все вопросы и договоримся о бесплатном замере.</p>
+
+                <div class="cta-contacts">
+                    <div class="cta-contact-item">
+                        <div class="cta-contact-label">Телефон:</div>
+                        <a href="tel:+78142260679" class="cta-contact-value">(8142) 26-06-79</a>
+                        <div class="cta-contact-hours">
+                            Будни: 8:00 — 21:00<br>
+                            Выходные: 10:00 — 21:00
+                        </div>
+                    </div>
+
+                    <div class="cta-contact-item">
+                        <div class="cta-contact-label">Мессенджеры (круглосуточно):</div>
+                        <div class="cta-messengers">
+                            <a href="https://wa.me/78142260679" class="btn btn-whatsapp" target="_blank">WhatsApp</a>
+                            <a href="https://t.me/+78142260679" class="btn btn-telegram" target="_blank">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section (Footer) -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Офис</h3>
+                    <p><strong>Адрес:</strong><br>г. Петрозаводск, ул. Ригачина, д. 47</p>
+                    <p><strong>Часы работы:</strong><br>
+                        Понедельник — Пятница: 9:00 — 18:00<br>
+                        Суббота — Воскресенье: выходной
+                    </p>
+                </div>
+
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+78142260679" class="footer-phone">(8142) 26-06-79</a></p>
+                    <p>
+                        Будни: 8:00 — 21:00<br>
+                        Выходные: 10:00 — 21:00
+                    </p>
+                    <div class="footer-messengers">
+                        <a href="https://wa.me/78142260679" target="_blank">WhatsApp</a>
+                        <a href="https://t.me/+78142260679" target="_blank">Telegram</a>
+                    </div>
+                </div>
+
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Реквизиты</h3>
+                    <p>
+                        ООО «ВК – Мебель»<br>
+                        ИНН 1001167533<br>
+                        КПП 100101001<br>
+                        ОГРН 1051000086610
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ВК-Мебель. Производство корпусной мебели в Петрозаводске</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/78142260679" class="floating-whatsapp" target="_blank" title="Написать в WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Наверх">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
