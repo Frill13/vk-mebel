@@ -125,11 +125,69 @@ counters.forEach(counter => {
 // Portfolio Images
 // ====================================
 
-// All 59 images from the "some images" folder
-const portfolioImages = [];
-for (let i = 1; i <= 59; i++) {
-    portfolioImages.push(`some images/${i}.jpg`);
-}
+// Portfolio images - add or modify filenames as needed
+// Simply add new entries to this array to include more images
+const portfolioImages = [
+    'some images/1.jpg',
+    'some images/2.jpg',
+    'some images/3.jpg',
+    'some images/4.jpg',
+    'some images/5.jpg',
+    'some images/6.jpg',
+    'some images/7.jpg',
+    'some images/8.jpg',
+    'some images/9.jpg',
+    'some images/10.jpg',
+    'some images/11.jpg',
+    'some images/12.jpg',
+    'some images/13.jpg',
+    'some images/14.jpg',
+    'some images/15.jpg',
+    'some images/16.jpg',
+    'some images/17.jpg',
+    'some images/18.jpg',
+    'some images/19.jpg',
+    'some images/20.jpg',
+    'some images/21.jpg',
+    'some images/22.jpg',
+    'some images/23.jpg',
+    'some images/24.jpg',
+    'some images/25.jpg',
+    'some images/26.jpg',
+    'some images/27.jpg',
+    'some images/28.jpg',
+    'some images/29.jpg',
+    'some images/30.jpg',
+    'some images/31.jpg',
+    'some images/32.jpg',
+    'some images/33.jpg',
+    'some images/34.jpg',
+    'some images/35.jpg',
+    'some images/36.jpg',
+    'some images/37.jpg',
+    'some images/38.jpg',
+    'some images/39.jpg',
+    'some images/40.jpg',
+    'some images/41.jpg',
+    'some images/42.jpg',
+    'some images/43.jpg',
+    'some images/44.jpg',
+    'some images/45.jpg',
+    'some images/46.jpg',
+    'some images/47.jpg',
+    'some images/48.jpg',
+    'some images/49.jpg',
+    'some images/50.jpg',
+    'some images/51.jpg',
+    'some images/52.jpg',
+    'some images/53.jpg',
+    'some images/54.jpg',
+    'some images/55.jpg',
+    'some images/56.jpg',
+    'some images/57.jpg',
+    'some images/58.jpg',
+    'some images/59.jpg'
+];
 
 // Initialize Swiper for Portfolio Slider
 const portfolioSwiper = new Swiper('.portfolioSwiper', {
