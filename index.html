@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ВК-Мебель — Честная мебель в Петрозаводске</title>
+<meta name="description" content="Корпусная мебель под ключ в Петрозаводске — кухни, шкафы-купе, гардеробные, офисная и торговая мебель. Замер, производство, доставка и установка. С 1996 года."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23d97707'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23fff'>ВК</text></svg>"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#003353",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#96ccff",
+                    "on-surface": "#e9e1dd",
+                    "on-secondary-fixed": "#1e1b19",
+                    "inverse-surface": "#e9e1dd",
+                    "surface-container-low": "#1e1b19",
+                    "on-primary-fixed-variant": "#6e3900",
+                    "tertiary-container": "#0297e8",
+                    "on-secondary": "#33302d",
+                    "on-background": "#e9e1dd",
+                    "secondary-fixed-dim": "#ccc5c1",
+                    "primary-fixed-dim": "#ffb77d",
+                    "on-tertiary-fixed": "#001d32",
+                    "surface-dim": "#161311",
+                    "tertiary": "#96ccff",
+                    "surface-tint": "#ffb77d",
+                    "primary-container": "#d97707",
+                    "background": "#161311",
+                    "surface-container-lowest": "#100e0c",
+                    "outline-variant": "#554336",
+                    "primary": "#ffb77d",
+                    "surface-container": "#221f1d",
+                    "error-container": "#93000a",
+                    "on-primary-container": "#432100",
+                    "secondary-container": "#4c4845",
+                    "surface-bright": "#3c3836",
+                    "secondary-fixed": "#e8e1dd",
+                    "surface-container-high": "#2d2927",
+                    "on-primary": "#4d2600",
+                    "on-error-container": "#ffdad6",
+                    "inverse-on-surface": "#33302d",
+                    "on-error": "#690005",
+                    "on-tertiary-container": "#002c48",
+                    "on-secondary-container": "#beb7b3",
+                    "surface-container-highest": "#383432",
+                    "tertiary-fixed": "#cee5ff",
+                    "surface-variant": "#383432",
+                    "on-secondary-fixed-variant": "#4a4643",
+                    "surface": "#161311",
+                    "on-primary-fixed": "#2f1500",
+                    "on-surface-variant": "#dbc2b0",
+                    "secondary": "#ccc5c1",
+                    "inverse-primary": "#904d00",
+                    "outline": "#a38c7c",
+                    "on-tertiary-fixed-variant": "#004a75",
+                    "primary-fixed": "#ffdcc3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-line-rule { border: none !important; }
+      .glass-amber {
+        background: rgba(56, 52, 50, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .primary-gradient {
+        background: linear-gradient(to bottom, #ffb77d, #d97707);
+      }
+      html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#161311]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto font-['Manrope'] font-bold tracking-tight">
+<div class="text-2xl font-black text-white tracking-tighter">ВК-Мебель</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-400 hover:text-white transition-colors" href="#about">О нас</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#services">Услуги</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#process">Процесс</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#contacts">Контакты</a>
+</div>
+<div class="flex items-center gap-6">
+<a class="hidden lg:block text-zinc-400 hover:text-white transition-colors" href="tel:+79217260679">+7 921 726 06 79</a>
+<a class="hidden sm:inline-block px-5 py-2 primary-gradient text-on-primary rounded-xl font-bold transition-all duration-300 active:scale-95 shadow-lg" href="https://wa.me/79217260679" target="_blank" rel="noopener">WhatsApp</a>
+<button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Открыть меню">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-[#161311]/95 backdrop-blur-md px-8 pb-6">
+<a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="#about">О нас</a>
+<a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="#services">Услуги</a>
+<a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="#process">Процесс</a>
+<a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="#contacts">Контакты</a>
+<a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="tel:+79217260679">+7 921 726 06 79</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 grayscale" alt="Кухня с тёплым освещением — работа ВК-Мебель" src="images/hero-kitchen.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8 flex flex-col justify-center">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] mb-6 text-white">
+                    Корпусная мебель под ключ — <span class="text-primary">честная цена</span>, надёжный результат
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                    Замер, производство, доставка и установка — всё включено. Работаем для людей, которые ценят деньги.
+                </p>
+<div class="flex flex-wrap gap-4 mb-16">
+<a class="px-8 py-4 primary-gradient text-on-primary font-bold rounded-xl text-lg hover:brightness-110 transition-all inline-block" href="#contacts">Обсудить проект</a>
+<a class="px-8 py-4 bg-surface-container-high text-on-surface font-bold rounded-xl text-lg hover:bg-surface-container-highest transition-all inline-block" href="https://wa.me/79217260679" target="_blank" rel="noopener">Написать в WhatsApp</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+<div class="flex flex-col">
+<span class="text-primary text-4xl font-black font-headline">28 лет</span>
+<span class="text-on-surface-variant font-medium">опыта работы</span>
+</div>
+<div class="flex flex-col">
+<span class="text-primary text-4xl font-black font-headline">От 10 000 ₽</span>
+<span class="text-on-surface-variant font-medium">минимальный заказ</span>
+</div>
+<div class="flex flex-col">
+<span class="text-primary text-4xl font-black font-headline">Под ключ</span>
+<span class="text-on-surface-variant font-medium">никаких хлопот</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container" id="about">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="font-headline text-4xl font-bold text-white mb-8 leading-tight">Мы не ждём пока клиент разберётся — сразу берёмся за дело</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-12">
+                        Мы уточняем задачу, учитываем технику, проводку, сантехнику и все мелочи. Вы получаете готовый результат, а не головную боль. Работаем открыто, без лишних наценок и пустых обещаний.
+                    </p>
+<div class="grid grid-cols-2 gap-y-10 gap-x-4">
+<div>
+<p class="text-primary text-3xl font-bold font-headline">28 лет</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest mt-1">стажа</p>
+</div>
+<div>
+<p class="text-primary text-3xl font-bold font-headline">1000+</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest mt-1">проектов</p>
+</div>
+<div>
+<p class="text-primary text-3xl font-bold font-headline">1 год</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest mt-1">гарантия</p>
+</div>
+<div>
+<p class="text-primary text-3xl font-bold font-headline">от 10 000 ₽</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest mt-1">честная цена</p>
+</div>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover" alt="Кухня из дерева — реальная работа ВК-Мебель" src="images/about-kitchen.jpg"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 glass-amber rounded-xl">
+<p class="text-white italic text-lg">"Наша работа — сделать так, чтобы мебель служила десятилетиями, а не до первого переезда."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- For Whom Section (Bento) -->
+<section class="py-24 bg-surface" id="services">
+<div class="container mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-white mb-16">Для кого мы работаем</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Card -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="Белая кухня — работа для частного клиента" src="images/kitchen-white.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-3xl font-bold text-white mb-2">Частные клиенты</h3>
+<p class="text-on-surface-variant max-w-sm">Кухни, шкафы-купе, гардеробные. Проектируем под ваши размеры и бюджет.</p>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" alt="Стеллаж и система хранения — мебель для офиса" src="images/shelving.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-xl font-bold text-white mb-1">Офисы и магазины</h3>
+<p class="text-sm text-on-surface-variant">Торговое оборудование и рабочие зоны.</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low">
+<!-- TODO: Replace with real medical furniture photo from Nano Banana -->
+<div class="w-full h-full bg-surface-container-highest opacity-50 group-hover:scale-105 transition-transform duration-700"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-xl font-bold text-white mb-1">Медицина</h3>
+<p class="text-sm text-on-surface-variant">Оснащение клиник и аптек по ГОСТу.</p>
+</div>
+</div>
+<!-- Large Card 2 -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9]">
+<!-- TODO: Replace with real school/hotel furniture photo from Nano Banana -->
+<div class="absolute inset-0 w-full h-full bg-surface-container-highest opacity-60 group-hover:scale-105 transition-transform duration-700"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-3xl font-bold text-white mb-2">Школы и отели</h3>
+<p class="text-on-surface-variant max-w-sm">Износостойкая мебель для общественных пространств с высокой нагрузкой.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-white mb-16 text-center">Наши принципы</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">task_alt</span>
+<h3 class="text-xl font-bold text-white mb-4">Всё под ключ</h3>
+<p class="text-on-surface-variant">От первого замера до финальной уборки после монтажа. Вам не нужно искать сторонних мастеров.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">account_balance_wallet</span>
+<h3 class="text-xl font-bold text-white mb-4">Честные цены</h3>
+<p class="text-on-surface-variant">Прямое производство без накруток за бренд или пафосный шоурум. Вы платите за материалы и работу.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">person</span>
+<h3 class="text-xl font-bold text-white mb-4">Личный подход</h3>
+<p class="text-on-surface-variant">Общаетесь напрямую с мастером. Никаких менеджеров, которые не знают, как устроена мебель.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">payments</span>
+<h3 class="text-xl font-bold text-white mb-4">Рассрочка</h3>
+<p class="text-on-surface-variant">Понимаем, что мебель — это вложение. Предлагаем удобные условия оплаты частями.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">view_in_ar</span>
+<h3 class="text-xl font-bold text-white mb-4">3D-визуализация</h3>
+<p class="text-on-surface-variant">По запросу подготовим проект, чтобы вы увидели будущую мебель в интерьере до начала работ.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified</span>
+<h3 class="text-xl font-bold text-white mb-4">Год гарантии</h3>
+<p class="text-on-surface-variant">Уверены в своей фурнитуре и сборке. Если что-то пойдет не так — исправим за свой счет.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-surface" id="process">
+<div class="container mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-white mb-16">Как мы работаем</h2>
+<div class="space-y-12">
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary font-bold text-xl">1</div>
+<div class="pb-8 border-l border-outline-variant pl-8 -ml-[4.25rem]">
+<h3 class="text-2xl font-bold text-white mb-2">Описываете задачу</h3>
+<p class="text-on-surface-variant max-w-2xl">Вы звоните или пишете нам. Мы задаем правильные вопросы, чтобы понять, что именно вам нужно.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary font-bold text-xl">2</div>
+<div class="pb-8 border-l border-outline-variant pl-8 -ml-[4.25rem]">
+<h3 class="text-2xl font-bold text-white mb-2">Замер и план</h3>
+<p class="text-on-surface-variant max-w-2xl">Мастер выезжает на объект, делает точные замеры с учетом кривизны стен, розеток и труб.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary font-bold text-xl">3</div>
+<div class="pb-8 border-l border-outline-variant pl-8 -ml-[4.25rem]">
+<h3 class="text-2xl font-bold text-white mb-2">Согласование проекта</h3>
+<p class="text-on-surface-variant max-w-2xl">Утверждаем материалы, фурнитуру и итоговую стоимость. Цена фиксируется в договоре.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary font-bold text-xl">4</div>
+<div class="pb-8 border-l border-outline-variant pl-8 -ml-[4.25rem]">
+<h3 class="text-2xl font-bold text-white mb-2">Производство</h3>
+<p class="text-on-surface-variant max-w-2xl">Изготавливаем мебель в собственной мастерской на профессиональных станках.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary font-bold text-xl">5</div>
+<div class="pl-8 -ml-[4.25rem]">
+<h3 class="text-2xl font-bold text-white mb-2">Монтаж и уборка</h3>
+<p class="text-on-surface-variant max-w-2xl">Доставляем, собираем и устанавливаем. После себя оставляем чистоту и готовую к жизни мебель.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Geography Section -->
+<section class="py-24 bg-surface-container-high relative overflow-hidden">
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl font-bold text-white mb-6">Где работаем</h2>
+<p class="text-xl text-on-surface-variant mb-8 leading-relaxed">
+                    Работаем в Петрозаводске и в радиусе 100 км. По договорённости — по всему Северо-Западу. Мы мобильны и всегда готовы приехать к вам.
+                </p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-bold tracking-tight">Республика Карелия и СЗФО</span>
+</div>
+</div>
+</div>
+<!-- Decorative map placeholder -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" alt="Карта Северо-Запада России" src="images/map.jpg"/>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-20 bg-surface">
+<div class="container mx-auto px-8">
+<div class="bg-primary-container p-12 md:p-20 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-black font-headline text-on-primary-container mb-6 max-w-2xl">Не знаете с чего начать?</h2>
+<p class="text-xl md:text-2xl text-on-primary-container/80 mb-10 max-w-2xl">
+                        Просто опишите задачу — я сам разберусь в деталях и предложу варианты. Без воды и сложных терминов.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<a class="px-10 py-5 bg-on-primary-container text-white font-bold rounded-xl text-lg hover:bg-black transition-all inline-block" href="tel:+79217260679">Позвонить</a>
+<a class="px-10 py-5 border-2 border-on-primary-container text-on-primary-container font-bold rounded-xl text-lg hover:bg-on-primary-container/10 transition-all inline-block" href="https://wa.me/79217260679" target="_blank" rel="noopener">Написать</a>
+</div>
+</div>
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[15rem] text-on-primary-container/10 rotate-12">architecture</span>
+</div>
+</div>
+</section>
+<!-- Contacts Section -->
+<section class="py-24 bg-surface-container" id="contacts">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline text-4xl font-bold text-white mb-10">Контакты</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<p class="text-sm text-on-surface-variant uppercase tracking-wider mb-1">Телефон</p>
+<a class="text-2xl font-bold text-white" href="tel:+79217260679">+7 921 726 06 79</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">home_pin</span>
+<div>
+<p class="text-sm text-on-surface-variant uppercase tracking-wider mb-1">Мастерские</p>
+<p class="text-xl text-white">г. Петрозаводск, ул. Ригачина, 47</p>
+<p class="text-on-surface-variant mt-2 text-sm">Можно приехать, посмотреть образцы и пообщаться лично.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<div>
+<p class="text-sm text-on-surface-variant uppercase tracking-wider mb-1">Режим работы</p>
+<p class="text-white">Будни 8:00–21:00</p>
+<p class="text-white">Выходные 11:00–20:00</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden grayscale contrast-125 border border-outline-variant/10">
+<!-- TODO: Replace with real workshop exterior photo -->
+<div class="w-full h-64 md:h-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-6xl">factory</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#221f1d] w-full rounded-t-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full">
+<div>
+<div class="text-xl font-bold text-white mb-6">ВК-Мебель</div>
+<p class="text-zinc-500 font-['Inter'] text-sm leading-relaxed">Надежное производство корпусной мебели в Петрозаводске с 1996 года.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Адрес</h4>
+<p class="text-zinc-500 font-['Inter'] text-sm leading-relaxed">г. Петрозаводск, ул. Ригачина, 47</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">График</h4>
+<p class="text-zinc-500 font-['Inter'] text-sm leading-relaxed">Будни 8:00–21:00</p>
+<p class="text-zinc-500 font-['Inter'] text-sm leading-relaxed">Выходные 11:00–20:00</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Мессенджеры</h4>
+<div class="flex flex-col gap-3">
+<a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="https://wa.me/79217260679" target="_blank" rel="noopener">WhatsApp</a>
+<a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="https://t.me/+79217260679" target="_blank" rel="noopener">Telegram</a>
+<a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#">Max</a>
+<a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#">Imo</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 py-8 text-center text-zinc-500 text-xs">
+            © 2026 ВК-Мебель. Все права защищены.
+        </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 w-16 h-16 primary-gradient rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform active:scale-95" href="https://wa.me/79217260679" target="_blank" rel="noopener">
+<svg class="w-8 h-8 text-white fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.143c1.589.943 3.333 1.443 5.111 1.444 5.421 0 9.835-4.414 9.838-9.835.002-2.628-1.022-5.1-2.881-6.958-1.86-1.857-4.329-2.88-6.959-2.882-5.424 0-9.838 4.415-9.841 9.836 0 2.106.666 4.159 1.921 5.864l-.916 3.348 3.427-.899zm10.511-6.621c-.246-.123-1.455-.717-1.681-.799-.225-.082-.389-.123-.553.123s-.635.799-.778.963-.287.184-.533.061c-.246-.123-1.037-.382-1.976-1.22-.731-.652-1.224-1.457-1.368-1.702-.144-.245-.016-.378.107-.5.111-.11.246-.287.369-.431.123-.143.164-.246.246-.41.082-.164.041-.307-.021-.43-.062-.123-.553-1.332-.758-1.824-.2-.486-.404-.421-.553-.428-.143-.007-.307-.008-.471-.008s-.43.061-.656.307c-.225.246-.861.84-0.861 2.05s.881 2.378 1.004 2.541c.123.164 1.733 2.646 4.197 3.708.586.253 1.044.404 1.4.517.589.187 1.125.16 1.549.097.473-.071 1.455-.594 1.66-1.168.205-.574.205-1.066.143-1.168-.061-.101-.225-.163-.471-.286z"></path>
+</svg>
+</a>
+<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
+</script>
+</body></html>
