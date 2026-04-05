@@ -104,9 +104,14 @@
 <a class="text-zinc-400 hover:text-white transition-colors" href="#process">Процесс</a>
 <a class="text-zinc-400 hover:text-white transition-colors" href="#contacts">Контакты</a>
 </div>
-<div class="flex items-center gap-6">
+<div class="flex items-center gap-4">
 <a class="hidden lg:block text-zinc-400 hover:text-white transition-colors" href="tel:+79217260679">+7 921 726 06 79</a>
-<a class="hidden sm:inline-block px-5 py-2 primary-gradient text-on-primary rounded-xl font-bold transition-all duration-300 active:scale-95 shadow-lg" href="https://wa.me/79217260679" target="_blank" rel="noopener">WhatsApp</a>
+<div class="hidden md:flex items-center gap-3">
+<a class="text-zinc-400 hover:text-green-400 transition-colors" href="https://wa.me/79217260679" target="_blank" rel="noopener" title="WhatsApp"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></a>
+<a class="text-zinc-400 hover:text-blue-400 transition-colors" href="https://t.me/+79217260679" target="_blank" rel="noopener" title="Telegram"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+<button class="copy-phone text-zinc-400 hover:text-purple-400 transition-colors text-sm" title="Max — скопировать номер" data-phone="+79217260679">Max</button>
+<button class="copy-phone text-zinc-400 hover:text-cyan-400 transition-colors text-sm" title="Imo — скопировать номер" data-phone="+79217260679">Imo</button>
+</div>
 <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Открыть меню">
 <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -119,6 +124,12 @@
 <a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="#process">Процесс</a>
 <a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="#contacts">Контакты</a>
 <a class="block py-3 text-zinc-400 hover:text-white transition-colors" href="tel:+79217260679">+7 921 726 06 79</a>
+<div class="flex gap-6 py-3">
+<a class="text-zinc-400 hover:text-green-400 transition-colors text-sm" href="https://wa.me/79217260679" target="_blank" rel="noopener">WhatsApp</a>
+<a class="text-zinc-400 hover:text-blue-400 transition-colors text-sm" href="https://t.me/+79217260679" target="_blank" rel="noopener">Telegram</a>
+<button class="copy-phone text-zinc-400 hover:text-purple-400 transition-colors text-sm" data-phone="+79217260679">Max</button>
+<button class="copy-phone text-zinc-400 hover:text-cyan-400 transition-colors text-sm" data-phone="+79217260679">Imo</button>
+</div>
 </div>
 </nav>
 <!-- Hero Section -->
@@ -187,7 +198,7 @@
 <div class="relative rounded-xl overflow-hidden aspect-square">
 <img class="w-full h-full object-cover" alt="Кухня из дерева — реальная работа ВК-Мебель" src="images/about-kitchen.jpg"/>
 <div class="absolute bottom-6 left-6 right-6 p-6 glass-amber rounded-xl">
-<p class="text-white italic text-lg">"Наша работа — сделать так, чтобы мебель служила десятилетиями, а не до первого переезда."</p>
+<p class="text-white italic text-lg">"Клиент даёт задачу — я беру на себя всё остальное."</p>
 </div>
 </div>
 </div>
@@ -198,38 +209,47 @@
 <div class="container mx-auto px-8">
 <h2 class="font-headline text-4xl font-bold text-white mb-16">Для кого мы работаем</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Large Card -->
+<!-- Large Card: Частные клиенты (cycling) -->
 <div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9]">
-<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="Белая кухня — работа для частного клиента" src="images/kitchen-white.jpg"/>
+<div class="cycle-gallery absolute inset-0" data-interval="4000">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-all duration-700" alt="Белая кухня — работа ВК-Мебель" src="images/kitchen-white.jpg"/>
+<img class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:scale-105 transition-all duration-700" alt="Стеллаж и система хранения" src="images/shelving-room.jpg"/>
+<img class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:scale-105 transition-all duration-700" alt="Гардеробная комната" src="images/wardrobe.jpg"/>
+<img class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:scale-105 transition-all duration-700" alt="Комод с золотой фурнитурой" src="images/dresser.jpg"/>
+</div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
 <div class="absolute bottom-8 left-8">
 <h3 class="text-3xl font-bold text-white mb-2">Частные клиенты</h3>
 <p class="text-on-surface-variant max-w-sm">Кухни, шкафы-купе, гардеробные. Проектируем под ваши размеры и бюджет.</p>
 </div>
 </div>
-<!-- Small Card 1 -->
+<!-- Small Card 1: Офисы (cycling) -->
 <div class="group relative overflow-hidden rounded-xl bg-surface-container-low">
-<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" alt="Стеллаж и система хранения — мебель для офиса" src="images/shelving.jpg"/>
+<div class="cycle-gallery" data-interval="5000">
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-all duration-700" alt="Торговый островок" src="images/retail-kiosk.jpg"/>
+<img class="w-full h-full object-cover opacity-0 absolute inset-0 group-hover:scale-105 transition-all duration-700" alt="Переговорный стол" src="images/conference.jpg"/>
+</div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
 <div class="absolute bottom-8 left-8">
 <h3 class="text-xl font-bold text-white mb-1">Офисы и магазины</h3>
 <p class="text-sm text-on-surface-variant">Торговое оборудование и рабочие зоны.</p>
 </div>
 </div>
-<!-- Small Card 2 -->
+<!-- Small Card 2: Медицина -->
 <div class="group relative overflow-hidden rounded-xl bg-surface-container-low">
-<!-- TODO: Replace with real medical furniture photo from Nano Banana -->
-<div class="w-full h-full bg-surface-container-highest opacity-50 group-hover:scale-105 transition-transform duration-700"></div>
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" alt="Аптечная мебель — стойка и витрины" src="images/medical.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
 <div class="absolute bottom-8 left-8">
 <h3 class="text-xl font-bold text-white mb-1">Медицина</h3>
 <p class="text-sm text-on-surface-variant">Оснащение клиник и аптек по ГОСТу.</p>
 </div>
 </div>
-<!-- Large Card 2 -->
+<!-- Large Card 2: Школы и отели (cycling) -->
 <div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9]">
-<!-- TODO: Replace with real school/hotel furniture photo from Nano Banana -->
-<div class="absolute inset-0 w-full h-full bg-surface-container-highest opacity-60 group-hover:scale-105 transition-transform duration-700"></div>
+<div class="cycle-gallery absolute inset-0" data-interval="4500">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-all duration-700" alt="Мебель для гостиничного номера" src="images/hotel.jpg"/>
+<img class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:scale-105 transition-all duration-700" alt="Сортировочная мебель для учреждений" src="images/sorting-room.jpg"/>
+</div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
 <div class="absolute bottom-8 left-8">
 <h3 class="text-3xl font-bold text-white mb-2">Школы и отели</h3>
@@ -360,7 +380,6 @@
 <!-- Contacts Section -->
 <section class="py-24 bg-surface-container" id="contacts">
 <div class="container mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 <div>
 <h2 class="font-headline text-4xl font-bold text-white mb-10">Контакты</h2>
 <div class="space-y-8">
@@ -389,14 +408,6 @@
 </div>
 </div>
 </div>
-<div class="rounded-xl overflow-hidden grayscale contrast-125 border border-outline-variant/10">
-<!-- TODO: Replace with real workshop exterior photo -->
-<div class="w-full h-64 md:h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-outline text-6xl">factory</span>
-</div>
-</div>
-</div>
-</div>
 </section>
 <!-- Footer -->
 <footer class="bg-[#221f1d] w-full rounded-t-none">
@@ -419,8 +430,8 @@
 <div class="flex flex-col gap-3">
 <a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="https://wa.me/79217260679" target="_blank" rel="noopener">WhatsApp</a>
 <a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="https://t.me/+79217260679" target="_blank" rel="noopener">Telegram</a>
-<a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#">Max</a>
-<a class="text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#">Imo</a>
+<button class="copy-phone text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100 text-sm text-left" data-phone="+79217260679">Max</button>
+<button class="copy-phone text-zinc-500 hover:text-amber-500 underline underline-offset-4 transition-all opacity-80 hover:opacity-100 text-sm text-left" data-phone="+79217260679">Imo</button>
 </div>
 </div>
 </div>
@@ -428,16 +439,38 @@
             © 2026 ВК-Мебель. Все права защищены.
         </div>
 </footer>
-<!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 w-16 h-16 primary-gradient rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform active:scale-95" href="https://wa.me/79217260679" target="_blank" rel="noopener">
-<svg class="w-8 h-8 text-white fill-current" viewbox="0 0 24 24">
-<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.143c1.589.943 3.333 1.443 5.111 1.444 5.421 0 9.835-4.414 9.838-9.835.002-2.628-1.022-5.1-2.881-6.958-1.86-1.857-4.329-2.88-6.959-2.882-5.424 0-9.838 4.415-9.841 9.836 0 2.106.666 4.159 1.921 5.864l-.916 3.348 3.427-.899zm10.511-6.621c-.246-.123-1.455-.717-1.681-.799-.225-.082-.389-.123-.553.123s-.635.799-.778.963-.287.184-.533.061c-.246-.123-1.037-.382-1.976-1.22-.731-.652-1.224-1.457-1.368-1.702-.144-.245-.016-.378.107-.5.111-.11.246-.287.369-.431.123-.143.164-.246.246-.41.082-.164.041-.307-.021-.43-.062-.123-.553-1.332-.758-1.824-.2-.486-.404-.421-.553-.428-.143-.007-.307-.008-.471-.008s-.43.061-.656.307c-.225.246-.861.84-0.861 2.05s.881 2.378 1.004 2.541c.123.164 1.733 2.646 4.197 3.708.586.253 1.044.404 1.4.517.589.187 1.125.16 1.549.097.473-.071 1.455-.594 1.66-1.168.205-.574.205-1.066.143-1.168-.061-.101-.225-.163-.471-.286z"></path>
-</svg>
-</a>
 <script>
+// Mobile menu
 const toggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('mobile-menu');
 toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
 menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
+
+// Copy phone number (for Max/Imo)
+document.querySelectorAll('.copy-phone').forEach(btn => {
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText(btn.dataset.phone).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = 'Скопировано!';
+      setTimeout(() => btn.textContent = orig, 1500);
+    });
+  });
+});
+
+// Image cycling
+document.querySelectorAll('.cycle-gallery').forEach(gallery => {
+  const imgs = gallery.querySelectorAll('img');
+  if (imgs.length < 2) return;
+  let current = 0;
+  const interval = parseInt(gallery.dataset.interval) || 4000;
+  const baseOpacity = imgs[0].classList.contains('opacity-60') ? 'opacity-60' : 'opacity-50';
+  setInterval(() => {
+    imgs[current].classList.remove(baseOpacity);
+    imgs[current].classList.add('opacity-0');
+    current = (current + 1) % imgs.length;
+    imgs[current].classList.remove('opacity-0');
+    imgs[current].classList.add(baseOpacity);
+  }, interval);
+});
 </script>
 </body></html>
